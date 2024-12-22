@@ -1,0 +1,70 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #f5f5f5;
+}
+.container{
+    width: 60%;
+    display: grid;
+    gap: 0;
+}
+.tool-list{
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    overflow: hidden;
+    gap: 10px;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+.tool--bnt{
+    display: block;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.tool--bnt:hover{
+    background-color: #dddddd;
+}
+#output{
+    height: 400px;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: white;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+        gap: 10px;
+    }
+
+    .tool-list {
+        flex-wrap: wrap; 
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .tool--bnt {
+        height: 40px; 
+        width: 40px;
+        font-size: 18px;
+    }
+
+    #output {
+        height: 300px; 
+        padding: 0.5rem;
+        font-size: 14px; 
+    }
+}
